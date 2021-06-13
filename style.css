@@ -40,7 +40,7 @@ body {
   padding: 8px 12px;
   position: absolute;
   border-radius: 5px;
-  top: 100px;
+  top: 70px;
   border: 0;
   cursor: pointer;
 }
@@ -85,5 +85,41 @@ toggle:focus {
 .needle.second {
   transform: translate(-50%, -100%) rotate(40deg);
   height: 100px;
-  background-color: #e74c3c;
+  /*  background-color: #e74c3c; */
+  background-color: #d6be6f;
+}
+
+.center-point {
+  background-color: #f0db98;
+  border: solid 2px #8b6834;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.center-point::after {
+  content: "";
+  background-color: var(--primary-color);
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.time {
+  font-size: 60px;
+}
+
+.date {
+  color: #aaa;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }

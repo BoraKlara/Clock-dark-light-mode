@@ -37,4 +37,14 @@ body {
 .toggle {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  padding: 8px 12px;
+  position: absolute;
+  border-radius: 5px;
+  top: 100px;
+  border: 0;
+  cursor: pointer;
+}
+
+toggle:focus {
+  outline: none;
 }

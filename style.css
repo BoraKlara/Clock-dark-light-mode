@@ -40,7 +40,7 @@ body {
   padding: 8px 12px;
   position: absolute;
   border-radius: 5px;
-  top: 70px;
+  top: 40px;
   border: 0;
   cursor: pointer;
 }
@@ -127,11 +127,13 @@ toggle:focus {
 .date .circle {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  /*   border-radius: 50%; */
-  height: 60px;
-  width: 60px;
-  flex: inline-flex;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  line-height: 18px;
+  font-size: 12px;
+  transition: all 0.5s ease-in;
 }

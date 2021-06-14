@@ -123,3 +123,15 @@ toggle:focus {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
+
+.date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  /*   border-radius: 50%; */
+  height: 60px;
+  width: 60px;
+  flex: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}

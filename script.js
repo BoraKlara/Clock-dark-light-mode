@@ -51,6 +51,9 @@ function setTime() {
   const hoursForClock = hours % 12;
   const minutes = time.getMinutes();
   const sencond = time.getSeconds();
+
+  // this need to be dynamic
+  hourElm.style.transform = `translate(-50%, -100%) rotate(30deg)`;
 }
 
 setTime();

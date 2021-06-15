@@ -53,7 +53,17 @@ function setTime() {
   const sencond = time.getSeconds();
 
   // this need to be dynamic
-  hourElm.style.transform = `translate(-50%, -100%) rotate(30deg)`;
+  hourElm.style.transform = `translate(-50%, -100%) rotate(${scale(
+    hoursForClock,
+    0,
+    11,
+    0,
+    360
+  )}deg)`;
 }
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+  return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+};
 
 setTime();

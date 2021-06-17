@@ -60,14 +60,14 @@ function setTime() {
     0,
     360
   )}deg)`;
-  minuteElm.style.transform = `translate(-50%, -100%) rotate(${scale(
+  minElm.style.transform = `translate(-50%, -100%) rotate(${scale(
     minutes,
     0,
     59,
     0,
     360
   )}deg)`;
-  second.style.transform = `translate(-50%, -100%) rotate(${scale(
+  secondElm.style.transform = `translate(-50%, -100%) rotate(${scale(
     seconds,
     0,
     59,
@@ -81,7 +81,7 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
   return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 };
 
-setTime();
-
-// in order to operate the clock
+/* // in order to operate the clock
 setInterval(setTime, 1000);
+ */
+setTime();

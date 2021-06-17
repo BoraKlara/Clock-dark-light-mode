@@ -50,7 +50,7 @@ function setTime() {
   const hours = time.getHours();
   const hoursForClock = hours % 12;
   const minutes = time.getMinutes();
-  const sencond = time.getSeconds();
+  const seconds = time.getSeconds();
 
   // this need to be dynamic
   hourElm.style.transform = `translate(-50%, -100%) rotate(${scale(
@@ -81,7 +81,6 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
   return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 };
 
-/* // in order to operate the clock
-setInterval(setTime, 1000);
- */
 setTime();
+
+const myClock = setInterval(setTime, 1000);

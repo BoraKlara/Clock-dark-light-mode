@@ -51,6 +51,7 @@ function setTime() {
   const hoursForClock = hours % 12;
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
+  const ampm = hours >= 12 ? "PM" : "AM";
 
   // this need to be dynamic
   hourElm.style.transform = `translate(-50%, -100%) rotate(${scale(
@@ -77,7 +78,7 @@ function setTime() {
 
   timeElm.innerHTML = `${hoursForClock}:${
     minutes < 10 ? `0${minutes}` : minutes
-  }`;
+  } ${ampm}`;
 }
 
 // scale time

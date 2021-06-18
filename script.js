@@ -74,6 +74,10 @@ function setTime() {
     0,
     360
   )}deg)`;
+
+  timeElm.innerHTML = `${hoursForClock}:${
+    minutes < 10 ? `0${minutes}` : minutes
+  }`;
 }
 
 // scale time

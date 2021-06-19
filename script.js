@@ -47,6 +47,7 @@ function setTime() {
   const time = new Date();
   const month = time.getMonth();
   const day = time.getDay();
+  const date = time.getDate();
   const hours = time.getHours();
   const hoursForClock = hours % 12;
   const minutes = time.getMinutes();
@@ -79,6 +80,7 @@ function setTime() {
   timeElm.innerHTML = `${hoursForClock}:${
     minutes < 10 ? `0${minutes}` : minutes
   } ${ampm}`;
+  dateElm = `${days[day]}, ${months[month]} <span class="circle"> ${date}</span>`;
 }
 
 // scale time

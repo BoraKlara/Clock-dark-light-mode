@@ -80,7 +80,7 @@ function setTime() {
   timeElm.innerHTML = `${hoursForClock}:${
     minutes < 10 ? `0${minutes}` : minutes
   } ${ampm}`;
-  dateElm = `${days[day]}, ${months[month]} <span class="circle"> ${date}</span>`;
+  dateElm.innerHTML = `${days[day]}, ${months[month]} <span class="circle"> ${date}</span>`;
 }
 
 // scale time
